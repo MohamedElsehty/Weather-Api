@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Weather</title>
+</head>
+<body>
+    <div class="site-content">
+        <div class="site-header">
+            <div class="container">
+                <a href="index.html" class="branding">
+                    <img src="images/logo@2x.png" alt="" class="logo w-25">
+                    <div class="logo-type">
+                        <h1 class="site-title">Weather</h1>
+                        <p class="site-description">tagline goes here</p>
+                    </div>
+                </a>
+
+                <!-- Default snippet for navigation -->
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="#">News</a></li>
+                        <li class="menu-item"><a href="#">Live cameras</a></li>
+                        <li class="menu-item"><a href="#">Photos</a></li>
+                        <li class="menu-item"><a href="#">Contact</a></li>
+                    </ul> <!-- .menu -->
+                </div> <!-- .main-navigation -->
+
+                <div class="mobile-navigation"></div>
+
+            </div>
+        </div> 
+    </div>
+    <!-- site-header -->
+<!-- content section-->
+<section class="home" id="home">
+    <div class="container">
+        <form class="position-relative mx-auto">
+            <input type="text" id="search" class="form-control text-white mx-auto rounded-5 mb-5"
+                placeholder="Find your location">
+                <input type="submit" id="submit" value="Find" class="position-absolute text-white rounded-5">
+        </form>
+            <div class="row mx-auto">
+<!-- ======== The  day 1 ======== -->
+                <div class="current-day col-lg-4 px-0 text-white">
+                    <div class="forecast-body  ">
+                        <div class="forecast-head d-flex justify-content-between p-2">
+                            <span class="day">Tuesday</span>
+                            <span class="date">11 October</span>
+                        </div>
+                        <div class="forecast-content px-3 py-4">
+                            <p class="location">Shiben Elkom City</p>
+                            <h2 class="temperature my-4 h1">24.7<sup>o</sup>C</h2>
+                            <img src="images/113.png" alt="" class="status-icon">
+                            <p class="status-title mb-4">sunny</p>
+                            <span class="rain">
+                                <img src="images/icon-umberella.png" alt="Weather">
+                                <small class="percentage">20%</small>
+                            </span>
+                            <span class="wind ms-3">
+                                <img src="images/icon-wind.png" alt="Weather">
+                                <small class="wind-speed">30%</small>
+                            </span>
+                            <span class="direction ms-3">
+                                <img src="images/icon-compass.png" alt="Weather">
+                                <small class="compass">20%</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    <!-- ======== The Tomorrow day Column ======== -->
+                <div class="tomorrow col-lg-4 px-0 text-white ">
+                    <div class="forecast-body">
+                        <div class="forecast-head p-2 text-center">
+                            <span class="day ">Tuesday</span>
+                        </div>
+                        <div class="forecast-content px-3 py-4 d-flex flex-column align-items-center">
+                            <img src="images/icon-umberella.png" alt="Weather" class="status-icon">
+                            <h2 class="max-temperature mt-4 h4">24.7<sup>o</sup>C</h2>
+                            <small class="min-temperature mb-4">24.7<sup>o</sup>C</small>
+                            <div class="status-title">sunny</div>
+                        </div>
+                    </div>
+                </div>
+        <!-- ======== The After-Tomorrow day Column ======== -->
+                <div class="after-tomorrow col-lg-4 px-0 text-white">
+                    <div class="forecast-body ">
+                        <div class="forecast-head p-2 text-center">
+                            <span class="day">wen</span>
+                        </div>
+                        <div class="forecast-content px-3 py-4 d-flex flex-column align-items-center">
+                            <img src="images/icon-umberella.png" alt="Weather" class="status-icon">
+                            <h2 class="max-temperature mt-4 h4">24.7<sup>o</sup>C</h2>
+                            <small class='min-temperature mb-4'>24.7<sup>o</sup>C</small>
+                            <div class="status-title">sunny</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter your email to subscribe...">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="my-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer> <!-- .site-footer -->
+  
+
+
+
+    <script src="js/mine.js"></script>
+</body>
+</html>
